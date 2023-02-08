@@ -1,0 +1,63 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'); 
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} 
+
+.blurry{
+    filter: blur(20px);
+    content: '';
+    background: url('https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center center;
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+form{
+    width: 400px;
+    filter: blur(0px);
+}
+h2, p{
+    margin: 0;
+    text-align: center;
+}
+p{
+    margin: 0rem 0 1rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+form>*{
+    width: 100%;
+}
+form input{
+    
+    margin: 0.1rem 0 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid;
+}
+input::placeholder{
+    font-size: 0.7rem;
+}
+input:focus{
+    outline: transparent;
+    border-color:rgb(223, 19, 223) ;
+}
+label{
+    font-size: 0.9rem;
+}
+.submit{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
